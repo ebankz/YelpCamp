@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <h1 class="d-4 text-center">Sign Up!</h1>
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" class="form-control">
+                </div>
+                <div>
+                    <button class="btn btn-success w-100">Sign Up!</button>
+                </div>
+            </form>
+            <div>
+                <p class="mt-2"><em>Already Have an account?</em></p>
+                <a href="/login" class="btn btn-primary w-100">Login</a>
+            </div>
+
+        </div>            
+    </div>
+</div>
+<% include ./partials/footer %>
